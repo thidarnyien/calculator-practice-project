@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffff;
+    font-family: 'Lato', 'Roboto';
+}
+.container{
+    background-color: #000;
+    width: 420px;
+    height: 800px;
+    padding: 10px;
+    margin:50px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.display{
+    display: block;
+    color: white;
+    font-size: 70px;
+    text-align: right;
+    padding: 20px;
+    height: 100px;
+}
+.keypad{
+    justify-content: center;
+    
+}
+.key{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    background-color: #333;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.zero{
+    width: 190px;
+    border-radius: 90px;
+}
+.key:active{
+    background-color: #a5a5a590;
+}
+tr:first-child td .key{
+    background-color: #a5a5a5;
+    color: #000;
+}
+tr:first-child td .key:active{
+    background-color: #a5a5a590;
+}
+tr td:last-child .key{
+    background-color: rgb(236, 171, 50);
+    color: #fff;
+}
+tr td:last-child .key:active{
+    background-color: rgba(236, 171, 50,0.8);
+}
